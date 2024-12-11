@@ -1,0 +1,75 @@
+.header {
+  position: relative;
+  overflow: hidden;
+}
+
+.header_logo {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.header_background {
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  left: 5%;
+  z-index: -1;
+  filter: opacity(0.5);
+}
+
+.filter {
+  font-family: 'Zen Dots', sans-serif;
+  margin: 10px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+.filter_title {
+  cursor: pointer;
+  font-size: 30px;
+}
+.filter-container {
+  max-height: 200px;
+}
+
+.filter-container_item {
+  font-size: 15px !important;
+  font-weight: 300 !important;
+}
+
+.cards-container {
+  z-index: 1;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.App {
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+}
+
+.dark {
+  background-color: rgb(16, 18, 21);
+  color: white;
+}
+body {
+  max-height: 100vh;
+}

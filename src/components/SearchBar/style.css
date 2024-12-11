@@ -1,0 +1,20 @@
+.header_seachBar {
+  position: absolute;
+  z-index: 1;
+  max-width: 700px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  text-align: center;
+}
+
+input {
+  border: var(--bs-border-width) solid #a62c7c !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(253, 13, 126, 0.25) !important;
+}
