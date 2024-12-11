@@ -20,7 +20,6 @@ const LoaderWrapper = styled.div`
 function App() {
   const [search, setSearch] = useState('');
   const [show, setShow] = useState(false);
-  // const [filter, setFilter] = useState(null);
 
   const { data, isLoading } = useFetch('./data.json');
 
