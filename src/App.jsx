@@ -35,35 +35,11 @@ function App() {
       ) {
         return false;
       }
-      // if (filter && !card.categorie.toLowerCase().includes(filter)) {
-      //   return false;
-      // }
       return true;
     });
   } else if (!search) {
     updatedData = data;
   }
-  // else if (filter) {
-  //   console.log('cible:', filter);
-  //   updatedData = data?.forEach((element) => {
-  //     if (filter !== element.catégorie) {
-  //       updatedData.pop(element);
-  //     }
-  //     console.log('braaaaa:', filter);
-  //     console.log(element.categorie);
-  //   });
-
-  // updatedData = data?.find(({ categorie }) => {
-  //   if (filter !== !categorie) {
-  //     return false;
-  //   }
-  //   // if (filter && !card.categorie.toLowerCase().includes(filter)) {
-  //   //   return false;
-  //   // }
-  //   console.log('FILTRE:', categorie);
-  //   return true;
-  // });
-  // }
 
   const handleOnShow = () => {
     const block = document.querySelector('.filter-container');
@@ -147,8 +123,6 @@ function App() {
   // };
 
   console.log('render:', updatedData);
-  // const [darkMode] = useContext(ThemeContext);
-  // console.log('app dark:', darkMode);
 
   return (
     <ThemeProvider>

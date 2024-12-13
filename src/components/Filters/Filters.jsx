@@ -1,3 +1,4 @@
+import './style.css';
 // const Filters = ({ categorie }) => {
 //   return (
 //     <div className="filter-container">

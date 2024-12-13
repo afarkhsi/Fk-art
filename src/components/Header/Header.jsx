@@ -8,11 +8,21 @@ const Header = () => {
   console.log('dark mode:', darkMode);
 
   const cible = document.querySelector('.App');
+  const filtre = document.querySelector('.filter_title');
+  const filtreItems = document.querySelectorAll('.filter-container_item');
 
   if (darkMode) {
     cible?.classList.add('dark');
+    filtre?.classList.add('dark');
+    filtreItems?.forEach((item) => {
+      item?.classList.add('dark');
+    });
   } else {
     cible?.classList.remove('dark');
+    filtre?.classList.remove('dark');
+    filtreItems?.forEach((item) => {
+      item?.classList.remove('dark');
+    });
   }
 
   const toggleTheme = () => {
@@ -24,7 +34,7 @@ const Header = () => {
       <span className="banner_title">FK-art</span>
       <Carousel
         fade
-        interval={3000}
+        interval={10000}
         prevIcon={false}
         nextIcon={false}
         indicators={false}

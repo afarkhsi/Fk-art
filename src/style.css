@@ -68,8 +68,17 @@
 
 .dark {
   background-color: rgb(16, 18, 21);
-  color: white;
+  color: white !important;
 }
 body {
   max-height: 100vh;
+}
+
+.loader {
+  margin-top: 100px;
+}
+
+.loader_item {
+  border: 6px solid rgb(117, 0, 127) !important;
+  border-bottom-color: transparent !important;
 }

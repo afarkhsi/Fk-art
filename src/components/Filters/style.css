@@ -1,0 +1,20 @@
+.filter_title {
+  color: rgba(0, 0, 0, 0.612);
+  transition: transform 1s ease-in-out;
+}
+
+.filter_title:hover {
+  transition: all 0.3s ease-in-out;
+  color: #000000;
+}
+
+.filter-container_item {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  color: rgba(0, 0, 0, 0.612);
+}
+
+.filter-container_item:hover {
+  transform: scale(1.1) rotate(-5deg);
+  color: #aa2c7f;
+}
